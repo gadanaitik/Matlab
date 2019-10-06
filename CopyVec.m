@@ -1,3 +1,5 @@
+%Copy the components of one vector into another
+
 function [y_out] = CopyVec(x,y)
 
 %x = [1 2 3 4 5 6 7 8];
