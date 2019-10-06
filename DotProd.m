@@ -1,3 +1,5 @@
+%Inner Dot Product of two vectors
+
 function [alpha] = DotProd (x,y)
 
 alpha = 0;
