@@ -1,7 +1,5 @@
-%Inner Dot Product of two vectors
-
 function [alpha] = DotProd (x,y)
-
+tic
 alpha = 0;
 [mx,nx] = size(x);
 [my,ny] = size(y);
@@ -31,8 +29,6 @@ if(mx == 1) && (mx*nx == my*ny) %x is a row vector
         alpha = alpha + (x(1,i)*y(i,1));
         end
     end
-else
-    disp ('Test 3 FAILED: x and y need to be of the same length')
 end
 if(nx == 1) && (mx*nx == my*ny) %x is a column vector
     if(my == 1) %y is a row vector
@@ -44,7 +40,6 @@ if(nx == 1) && (mx*nx == my*ny) %x is a column vector
         alpha = alpha + (x(i,1)*y(i,1));
         end
     end
-else
-    disp ('Test 4 FAILED: x and y need to be of the same length')
 end
+toc
 end
